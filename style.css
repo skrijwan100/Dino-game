@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+}
+.gamecantainar{
+    background-image: url('bg.png');
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    background-size: 100vw 100vh;
+}
+#dino{
+    width: 214px;
+    height: 100px;
+    position: absolute;
+    bottom: 0vw;
+    left: 5vw;
+}
+#dragon{
+    width: 190px;
+    height: 90px;
+    position: absolute;
+    bottom: 0vw;
+    left: 39vw;
+}
+.gameover{
+    display: none;
+    text-align: center;
+    font-size: 50px;
+    color: black;
+    font-weight: bold;
+}
+.jump{
+    animation: jumpdaino 0.8s linear infinite;
+}
+@keyframes jumpdaino {
+    0%{
+        bottom: 0;
+    }
+    50%{
+        bottom: 35vh;
+    }
+    100%{
+        bottom: 0;
+    }
+}
+.dragonani{
+    animation: move 3s infinite linear ;
+}
+@keyframes move {
+    0%{
+        left: 100vw;
+    }
+    100%{
+       left: -10vw;
+    }
+    
+}
+.score{
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    color: yellow;
+    font-weight: bold;
+ font-size: 20px;
+ border: 2px solid purple;
+ width: 125px;
+}
