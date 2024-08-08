@@ -75,11 +75,7 @@ document.onkeydown = function (e) {
       setTimeout(() => {
         cross = true
       }, 1000)
-      // anidur=parseFloat(window.getComputedStyle(dragon,null).getPropertyValue("animation-duration"))
-      // console.log("the anidur=",anidur)
-      // newanidur=anidur-0.2;
-      // console.log("the anidur=",newanidur)
-      // dragonani.style.animationduration= newanidur+'s'
+    
       
     }
   }, 100)
